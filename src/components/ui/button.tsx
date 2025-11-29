@@ -6,7 +6,7 @@ import { Slot } from "@radix-ui/react-slot";
 import { forwardRef } from "react";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center rounded-lg font-semibold transition-all duration-200 ease-[cubic-bezier(.2,.9,.2,1)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--trust-blue)] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+  "inline-flex items-center justify-center rounded-lg font-semibold transition-all duration-200 ease-[cubic-bezier(.2,.9,.2,1)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--vermilion)] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
@@ -18,7 +18,7 @@ const buttonVariants = cva(
           "bg-transparent border-2 border-[var(--vermilion)] text-[var(--vermilion)] hover:bg-[var(--vermilion)] hover:text-white",
         ghost:
           "bg-transparent text-[var(--neutral-text)] hover:bg-[var(--off-white)] hover:text-[var(--anchor-dark)]",
-        link: "bg-transparent text-[var(--trust-blue)] hover:text-[var(--vermilion)] underline-offset-4 hover:underline",
+        link: "bg-transparent text-[var(--anchor-dark)] hover:text-[var(--vermilion)] underline-offset-4 hover:underline",
       },
       size: {
         sm: "h-9 px-4 text-sm",

@@ -7,9 +7,9 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle } from "lucide-react";
 
 const benefits = [
-  "Reduce downtime with expert support",
-  "Custom OS & hardware solutions",
-  "Enterprise-grade security",
+  "Custom software & integration solutions",
+  "IT infrastructure & support",
+  "DSP, R&D, and innovation consulting",
 ];
 
 export function Hero() {
@@ -46,8 +46,8 @@ export function Hero() {
 
             {/* Subtext */}
             <p className="text-lg md:text-xl text-[var(--neutral-text)] mb-8 max-w-xl mx-auto lg:mx-0">
-              Reduce downtime, customize your OS, and scale hardware with
-              enterprise-grade support. We make complex tech simple.
+              Software integration, custom business solutions, and cutting-edge R&D
+              with enterprise-grade support. We make complex tech simple.
             </p>
 
             {/* Benefits */}
@@ -101,7 +101,7 @@ export function Hero() {
                 <div className="w-72 h-72 rounded-full bg-[var(--vermilion)]/5 animate-pulse" />
               </div>
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-56 h-56 rounded-full bg-[var(--trust-blue)]/5" />
+                <div className="w-56 h-56 rounded-full bg-[var(--teal-green)]/5" />
               </div>
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-40 h-40 rounded-full bg-[var(--teal-green)]/10" />
@@ -124,26 +124,6 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Trust Logos Section */}
-      <div className="border-t border-gray-100 bg-white">
-        <div className="container py-12">
-          <p className="text-center text-sm text-[var(--neutral-text)] mb-8">
-            Trusted by industry leaders
-          </p>
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-50">
-            {["TechCorp", "InnovateCo", "DataFlow", "CloudBase", "SecureIT"].map(
-              (company) => (
-                <div
-                  key={company}
-                  className="text-lg font-bold text-[var(--anchor-dark)]"
-                >
-                  {company}
-                </div>
-              )
-            )}
-          </div>
-        </div>
-      </div>
     </section>
   );
 }

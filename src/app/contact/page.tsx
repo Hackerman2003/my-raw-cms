@@ -50,7 +50,7 @@ export default function ContactPage() {
                     </h3>
                     <a
                       href="mailto:hello@ditronics.com"
-                      className="text-[var(--trust-blue)] hover:underline"
+                      className="text-[var(--anchor-dark)] hover:underline"
                     >
                       hello@ditronics.com
                     </a>
@@ -67,7 +67,7 @@ export default function ContactPage() {
                     </h3>
                     <a
                       href="tel:+1234567890"
-                      className="text-[var(--trust-blue)] hover:underline"
+                      className="text-[var(--anchor-dark)] hover:underline"
                     >
                       +1 (234) 567-890
                     </a>
@@ -121,16 +121,18 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Map Section (Placeholder) */}
+      {/* Map Section */}
       <section className="h-96 bg-gray-200 relative">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center">
-            <MapPin size={48} className="text-[var(--vermilion)] mx-auto mb-4" />
-            <p className="text-[var(--neutral-text)]">
-              Map integration coming soon
-            </p>
-          </div>
-        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d495.1382159487743!2d39.34260127383935!3d-6.877935025779765!3m2!1i1024!2i768!4f13.1!2m1!1sSHANGWE%20KIBADA!5e0!3m2!1sen!2stz!4v1764421644928!5m2!1sen!2stz"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="Ditronics Location"
+        />
       </section>
     </>
   );

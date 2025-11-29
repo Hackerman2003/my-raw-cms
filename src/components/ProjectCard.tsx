@@ -43,7 +43,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
               className="object-cover transition-transform duration-500 group-hover:scale-105"
             />
           ) : (
-            <div className="w-full h-full bg-gradient-to-br from-[var(--vermilion)]/20 to-[var(--trust-blue)]/20 flex items-center justify-center">
+            <div className="w-full h-full bg-gradient-to-br from-[var(--vermilion)]/20 to-[var(--teal-green)]/20 flex items-center justify-center">
               <span className="text-4xl text-[var(--vermilion)]">◆</span>
             </div>
           )}

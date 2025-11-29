@@ -12,13 +12,14 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import {
-  Monitor,
-  Cpu,
-  Shield,
-  Headphones,
-  Settings,
-  Database,
+  Code,
+  Server,
+  Laptop,
+  Zap,
+  Lightbulb,
+  Compass,
   ArrowRight,
+  Settings,
 } from "lucide-react";
 
 export interface Service {
@@ -31,12 +32,12 @@ export interface Service {
 }
 
 const iconMap: Record<string, React.ReactNode> = {
-  monitor: <Monitor size={24} />,
-  cpu: <Cpu size={24} />,
-  shield: <Shield size={24} />,
-  headphones: <Headphones size={24} />,
-  settings: <Settings size={24} />,
-  database: <Database size={24} />,
+  code: <Code size={24} />,
+  server: <Server size={24} />,
+  laptop: <Laptop size={24} />,
+  zap: <Zap size={24} />,
+  lightbulb: <Lightbulb size={24} />,
+  compass: <Compass size={24} />,
 };
 
 const tierColors: Record<string, "secondary" | "warning" | "success"> = {
@@ -121,8 +122,8 @@ export function ServicesGrid({ services, showAll = false }: ServicesGridProps) {
         >
           <h2 className="mb-4">Our Services</h2>
           <p className="text-lg text-[var(--neutral-text)] max-w-2xl mx-auto">
-            From OS downgrades to custom enterprise solutions, we provide
-            comprehensive tech services tailored to your business needs.
+            From software integration to custom business solutions and R&D, we provide
+            comprehensive technology services tailored to your business needs.
           </p>
         </motion.div>
 

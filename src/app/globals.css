@@ -72,7 +72,7 @@ body {
 
 /* Focus styles for accessibility */
 :focus-visible {
-  outline: 2px solid var(--trust-blue);
+  outline: 2px solid var(--vermilion);
   outline-offset: 2px;
 }
 
@@ -145,7 +145,7 @@ h3 {
 
 /* Link styles */
 a {
-  color: var(--trust-blue);
+  color: var(--anchor-dark);
   text-decoration: none;
   transition: color 200ms cubic-bezier(.2,.9,.2,1);
 }

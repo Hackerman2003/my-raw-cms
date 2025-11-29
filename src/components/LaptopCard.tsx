@@ -90,19 +90,19 @@ export function LaptopCard({ laptop, index }: LaptopCardProps) {
           {/* Specs */}
           <div className="grid grid-cols-2 gap-3 mb-6">
             <div className="flex items-center gap-2 text-sm text-[var(--neutral-text)]">
-              <Cpu size={16} className="text-[var(--trust-blue)]" />
+              <Cpu size={16} className="text-[var(--anchor-dark)]" />
               <span className="truncate">{laptop.specs.cpu}</span>
             </div>
             <div className="flex items-center gap-2 text-sm text-[var(--neutral-text)]">
-              <MemoryStick size={16} className="text-[var(--trust-blue)]" />
+              <MemoryStick size={16} className="text-[var(--anchor-dark)]" />
               <span>{laptop.specs.ram}</span>
             </div>
             <div className="flex items-center gap-2 text-sm text-[var(--neutral-text)]">
-              <HardDrive size={16} className="text-[var(--trust-blue)]" />
+              <HardDrive size={16} className="text-[var(--anchor-dark)]" />
               <span>{laptop.specs.storage}</span>
             </div>
             <div className="flex items-center gap-2 text-sm text-[var(--neutral-text)]">
-              <Monitor size={16} className="text-[var(--trust-blue)]" />
+              <Monitor size={16} className="text-[var(--anchor-dark)]" />
               <span className="truncate">{laptop.specs.gpu}</span>
             </div>
           </div>

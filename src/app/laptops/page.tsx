@@ -127,7 +127,7 @@ export default function LaptopsPage() {
                       searchQuery: e.target.value,
                     }))
                   }
-                  className="h-10 w-64 rounded-lg border border-gray-200 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-[var(--trust-blue)]"
+                  className="h-10 w-64 rounded-lg border border-gray-200 px-4 text-sm focus:outline-none focus:ring-2 focus:ring-[var(--vermilion)]"
                 />
               </div>
             </div>
@@ -177,7 +177,7 @@ export default function LaptopsPage() {
                           type="checkbox"
                           checked={filters.stockStatus.includes(status)}
                           onChange={() => toggleStockFilter(status)}
-                          className="w-4 h-4 rounded border-gray-300 text-[var(--vermilion)] focus:ring-[var(--trust-blue)]"
+                          className="w-4 h-4 rounded border-gray-300 text-[var(--vermilion)] focus:ring-[var(--vermilion)]"
                         />
                         <span className="text-sm text-[var(--neutral-text)]">
                           {status}
@@ -208,7 +208,7 @@ export default function LaptopsPage() {
                               priceRange: range.value,
                             }))
                           }
-                          className="w-4 h-4 border-gray-300 text-[var(--vermilion)] focus:ring-[var(--trust-blue)]"
+                          className="w-4 h-4 border-gray-300 text-[var(--vermilion)] focus:ring-[var(--vermilion)]"
                         />
                         <span className="text-sm text-[var(--neutral-text)]">
                           {range.label}

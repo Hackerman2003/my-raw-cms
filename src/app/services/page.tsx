@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Services — Ditronics",
   description:
-    "Comprehensive IT services including OS downgrades, custom builds, enterprise solutions, and 24/7 support.",
+    "Software integration, IT infrastructure, custom business software, DSP solutions, and R&D services for modern enterprises.",
 };
 
 export default function ServicesPage() {
@@ -20,8 +20,8 @@ export default function ServicesPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="mb-6">Our Services</h1>
             <p className="text-xl text-[var(--neutral-text)] mb-8">
-              From OS downgrades to enterprise-grade infrastructure, we provide
-              comprehensive tech solutions tailored to your business needs.
+              From software integration to custom business solutions and R&D, we provide
+              comprehensive technology services tailored to your business needs.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button variant="primary" size="lg" asChild>

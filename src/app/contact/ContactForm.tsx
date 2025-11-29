@@ -1,13 +1,11 @@
 "use client";
 
 import { useActionState } from "react";
-import { useSearchParams } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { submitContactForm, type ContactFormState } from "./actions";
-import { Mail, MapPin, Phone, CheckCircle, Loader2 } from "lucide-react";
-import { Suspense } from "react";
+import { CheckCircle, Loader2 } from "lucide-react";
 
 const initialState: ContactFormState = {
   success: false,
@@ -15,9 +13,6 @@ const initialState: ContactFormState = {
 };
 
 function ContactFormContent() {
-  const searchParams = useSearchParams();
-  const planParam = searchParams.get("plan") ?? "";
-  
   const [state, formAction, isPending] = useActionState(
     submitContactForm,
     initialState
@@ -91,37 +86,14 @@ function ContactFormContent() {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-6">
-        <div>
-          <label
-            htmlFor="company"
-            className="block text-sm font-medium text-[var(--anchor-dark)] mb-2"
-          >
-            Company
-          </label>
-          <Input id="company" name="company" placeholder="Company Inc." />
-        </div>
-
-        <div>
-          <label
-            htmlFor="plan"
-            className="block text-sm font-medium text-[var(--anchor-dark)] mb-2"
-          >
-            Interested In
-          </label>
-          <select
-            id="plan"
-            name="plan"
-            defaultValue={planParam}
-            className="flex h-11 w-full rounded-lg border border-gray-200 bg-white px-4 py-2 text-base text-[var(--anchor-dark)] focus:outline-none focus:ring-2 focus:ring-[var(--trust-blue)]"
-          >
-            <option value="">Select a plan</option>
-            <option value="starter">Starter Plan</option>
-            <option value="pro">Pro Plan</option>
-            <option value="enterprise">Enterprise Plan</option>
-            <option value="custom">Custom Solution</option>
-          </select>
-        </div>
+      <div>
+        <label
+          htmlFor="company"
+          className="block text-sm font-medium text-[var(--anchor-dark)] mb-2"
+        >
+          Company
+        </label>
+        <Input id="company" name="company" placeholder="Company Inc." />
       </div>
 
       <div>
@@ -165,7 +137,7 @@ function ContactFormContent() {
 
       <p className="text-sm text-[var(--neutral-text)] text-center">
         By submitting this form, you agree to our{" "}
-        <a href="#" className="text-[var(--trust-blue)] hover:underline">
+        <a href="#" className="text-[var(--anchor-dark)] hover:underline">
           Privacy Policy
         </a>
         .
@@ -175,9 +147,5 @@ function ContactFormContent() {
 }
 
 export function ContactForm() {
-  return (
-    <Suspense fallback={<div className="animate-pulse bg-gray-100 rounded-lg h-96" />}>
-      <ContactFormContent />
-    </Suspense>
-  );
+  return <ContactFormContent />;
 }
