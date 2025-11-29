@@ -18,11 +18,13 @@ export interface Laptop {
     cpu: string;
     ram: string;
     storage: string;
-    gpu: string;
-    os: string;
+    gpu?: string;
+    display?: string;
+    battery?: string;
   };
-  images: string[];
+  images: any[];
   stockStatus: "In Stock" | "Limited" | "Out of Stock";
+  condition?: string;
   notes?: string;
 }
 
@@ -37,14 +39,28 @@ interface LaptopCardProps {
   index: number;
 }
 
+// Helper to get image URL - handles URL strings
+function getImageUrl(image: any): string | null {
+  if (!image) return null;
+  
+  // If it's already a URL string
+  if (typeof image === 'string') {
+    return image;
+  }
+  
+  return null;
+}
+
 export function LaptopCard({ laptop, index }: LaptopCardProps) {
   const formatPrice = (price: number, currency: string) => {
-    return new Intl.NumberFormat("en-US", {
+    return new Intl.NumberFormat("en-TZ", {
       style: "currency",
       currency: currency,
       minimumFractionDigits: 0,
     }).format(price);
   };
+
+  const imageUrl = laptop.images?.[0] ? getImageUrl(laptop.images[0]) : null;
 
   return (
     <motion.div
@@ -56,9 +72,9 @@ export function LaptopCard({ laptop, index }: LaptopCardProps) {
       <Card className="group h-full overflow-hidden">
         {/* Image */}
         <div className="relative aspect-[4/3] bg-gray-50 overflow-hidden">
-          {laptop.images?.[0] ? (
+          {imageUrl ? (
             <Image
-              src={laptop.images[0]}
+              src={imageUrl}
               alt={laptop.name}
               fill
               className="object-contain p-4 transition-transform duration-500 group-hover:scale-105"
