@@ -49,10 +49,10 @@ export default function ContactPage() {
                       Email
                     </h3>
                     <a
-                      href="mailto:hello@ditronics.com"
+                      href="mailto:info@ditronics.co.tz"
                       className="text-[var(--anchor-dark)] hover:underline"
                     >
-                      hello@ditronics.com
+                      info@ditronics.co.tz
                     </a>
                   </div>
                 </div>
@@ -66,10 +66,10 @@ export default function ContactPage() {
                       Phone
                     </h3>
                     <a
-                      href="tel:+1234567890"
+                      href="tel:+255717321753"
                       className="text-[var(--anchor-dark)] hover:underline"
                     >
-                      +1 (234) 567-890
+                      +255 717 321 753
                     </a>
                   </div>
                 </div>
@@ -83,9 +83,9 @@ export default function ContactPage() {
                       Office
                     </h3>
                     <p className="text-[var(--neutral-text)]">
-                      123 Tech Street
+                      Shangwe Kibada
                       <br />
-                      San Francisco, CA 94102
+                      Dar es Salaam, Tanzania
                     </p>
                   </div>
                 </div>
@@ -99,7 +99,7 @@ export default function ContactPage() {
                       Hours
                     </h3>
                     <p className="text-[var(--neutral-text)]">
-                      Mon - Fri: 9am - 6pm PST
+                      Mon - Fri: 9am - 6pm EAT
                       <br />
                       24/7 Support for clients
                     </p>

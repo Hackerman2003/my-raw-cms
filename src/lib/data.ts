@@ -256,29 +256,4 @@ export const sampleLaptops: Laptop[] = [
 ];
 
 // Sample Testimonials Data
-export const sampleTestimonials: Testimonial[] = [
-  {
-    id: "1",
-    quote:
-      "Ditronics transformed our IT infrastructure. Their software integration was seamless, and our business systems work better than ever.",
-    author: "Sarah Chen",
-    title: "CTO, FinCo",
-    metrics: "42% fewer incidents",
-  },
-  {
-    id: "2",
-    quote:
-      "Their custom software solutions have revolutionized our workflow. What used to take hours now takes minutes.",
-    author: "Michael Rodriguez",
-    title: "Operations Director, TechFlow",
-    metrics: "3x faster processing",
-  },
-  {
-    id: "3",
-    quote:
-      "The R&D team helped us bring our innovative product to market. Their technical expertise and research capabilities are outstanding.",
-    author: "Dr. Emily Watson",
-    title: "CEO, InnovateLab",
-    metrics: "Product launched in 6 months",
-  },
-];
+export const sampleTestimonials: Testimonial[] = [];

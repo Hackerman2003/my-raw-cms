@@ -45,16 +45,17 @@ export default function ServicesPage() {
             <div>
               <h2 className="mb-6">Why Choose Ditronics?</h2>
               <p className="text-lg text-[var(--neutral-text)] mb-8">
-                With over a decade of experience serving enterprise clients, we
-                understand the unique challenges businesses face with technology.
+                We bring dedication, technical expertise, and a client-first approach
+                to every project. Our team understands the unique challenges businesses
+                face with technology.
               </p>
               <ul className="space-y-4">
                 {[
-                  "99.9% uptime guarantee on all managed services",
-                  "24/7 support from certified technicians",
-                  "Transparent pricing with no hidden fees",
-                  "Customized solutions for your specific needs",
-                  "Data security and compliance expertise",
+                  "Reliable service with consistent quality delivery",
+                  "Dedicated support from skilled technicians",
+                  "Transparent communication and fair pricing",
+                  "Tailored solutions for your specific needs",
+                  "Focus on long-term partnerships and growth",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <CheckCircle
@@ -69,10 +70,10 @@ export default function ServicesPage() {
             <div className="bg-[var(--off-white)] rounded-lg p-8">
               <div className="grid grid-cols-2 gap-6">
                 {[
-                  { value: "500+", label: "Enterprise Clients" },
-                  { value: "99.9%", label: "Uptime" },
-                  { value: "24/7", label: "Support" },
-                  { value: "10+", label: "Years Experience" },
+                  { value: "50+", label: "Projects Completed" },
+                  { value: "98%", label: "Client Satisfaction" },
+                  { value: "24/7", label: "Support Available" },
+                  { value: "5+", label: "Years Experience" },
                 ].map((stat) => (
                   <div key={stat.label} className="text-center">
                     <p className="text-3xl font-bold text-[var(--vermilion)]">

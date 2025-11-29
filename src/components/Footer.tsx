@@ -9,10 +9,10 @@ const footerLinks = {
     { href: "/contact", label: "Contact" },
   ],
   services: [
-    { href: "/services#os-downgrade", label: "OS Downgrades" },
-    { href: "/services#custom-builds", label: "Custom Builds" },
-    { href: "/services#enterprise", label: "Enterprise Solutions" },
-    { href: "/services#support", label: "Tech Support" },
+    { href: "/services#software-integration", label: "Software & Integration" },
+    { href: "/services#it-infrastructure", label: "IT Infrastructure" },
+    { href: "/services#custom-software", label: "Custom Software" },
+    { href: "/services#electrical-electronics", label: "Electrical & Electronics" },
   ],
   resources: [
     { href: "/laptops", label: "Laptop Catalog" },
@@ -43,27 +43,27 @@ export function Footer() {
               <span>Ditronics</span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Optimize your tech with enterprise-grade solutions. Custom builds,
-              OS downgrades, and hardware support you can trust.
+              Your trusted partner for software integration, IT infrastructure,
+              custom business solutions, and innovative R&D services.
             </p>
             <div className="flex flex-col gap-2 text-sm text-gray-400">
               <a
-                href="mailto:hello@ditronics.com"
+                href="mailto:info@ditronics.co.tz"
                 className="flex items-center gap-2 hover:text-white transition-colors"
               >
                 <Mail size={16} />
-                hello@ditronics.com
+                info@ditronics.co.tz
               </a>
               <a
-                href="tel:+1234567890"
+                href="tel:+255717321753"
                 className="flex items-center gap-2 hover:text-white transition-colors"
               >
                 <Phone size={16} />
-                +1 (234) 567-890
+                +255 717 321 753
               </a>
               <span className="flex items-center gap-2">
                 <MapPin size={16} />
-                San Francisco, CA
+                Shangwe Kibada, Tanzania
               </span>
             </div>
           </div>
@@ -123,7 +123,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-gray-500">
-            © {new Date().getFullYear()} Ditronics. All rights reserved.
+            © 2025 DITRONICS. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-gray-500">
             <Link href="#" className="hover:text-white transition-colors">
