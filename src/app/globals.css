@@ -145,7 +145,7 @@ h3 {
 
 /* Link styles */
 a {
-  color: var(--anchor-dark);
+  color: inherit;
   text-decoration: none;
   transition: color 200ms cubic-bezier(.2,.9,.2,1);
 }

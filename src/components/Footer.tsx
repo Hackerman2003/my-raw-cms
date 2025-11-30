@@ -55,30 +55,30 @@ export function Footer() {
                 height={40}
                 className="rounded-full"
               />
-              <span>{companyName}</span>
+              <span className="text-white">{companyName}</span>
             </Link>
-            <p className="text-gray-400 text-sm leading-relaxed">
+            <p className="text-gray-300 text-sm leading-relaxed">
               Your trusted partner for software integration, IT infrastructure,
               custom business solutions, and innovative R&D services.
             </p>
-            <div className="flex flex-col gap-2 text-sm text-gray-400">
+            <div className="flex flex-col gap-2 text-sm">
               <a
                 href={`mailto:${email}`}
-                className="flex items-center gap-2 hover:text-white transition-colors"
+                className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
               >
-                <Mail size={16} />
-                {email}
+                <Mail size={16} className="text-gray-300" />
+                <span className="text-gray-300">{email}</span>
               </a>
               <a
                 href={`tel:+${phoneNumber}`}
-                className="flex items-center gap-2 hover:text-white transition-colors"
+                className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
               >
-                <Phone size={16} />
-                {formatPhoneDisplay(phoneNumber)}
+                <Phone size={16} className="text-gray-300" />
+                <span className="text-gray-300">{formatPhoneDisplay(phoneNumber)}</span>
               </a>
-              <span className="flex items-center gap-2">
-                <MapPin size={16} />
-                {address}
+              <span className="flex items-center gap-2 text-gray-300">
+                <MapPin size={16} className="text-gray-300" />
+                <span className="text-gray-300">{address}</span>
               </span>
             </div>
           </div>
@@ -91,7 +91,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-gray-400 hover:text-white transition-colors"
+                    className="text-sm text-gray-300 hover:text-white transition-colors block"
                   >
                     {link.label}
                   </Link>
@@ -108,7 +108,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-gray-400 hover:text-white transition-colors"
+                    className="text-sm text-gray-300 hover:text-white transition-colors block"
                   >
                     {link.label}
                   </Link>
@@ -125,7 +125,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-gray-400 hover:text-white transition-colors"
+                    className="text-sm text-gray-300 hover:text-white transition-colors block"
                   >
                     {link.label}
                   </Link>
@@ -137,10 +137,10 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-gray-400">
             © 2025 DITRONICS. All rights reserved.
           </p>
-          <div className="flex gap-6 text-sm text-gray-500">
+          <div className="flex gap-6 text-sm text-gray-400">
             <Link href="#" className="hover:text-white transition-colors">
               Privacy Policy
             </Link>
